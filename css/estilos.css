@@ -76,6 +76,10 @@ button.presupuesto {
 	cursor: pointer;
 }
 
+button.presupuesto:hover {
+	opacity: 0.7;
+}
+
 button.llamar {
 	width: 280px;
 	height: 70px;
@@ -89,6 +93,10 @@ button.llamar {
 	opacity: none;
 	margin-left: 60px;
 	cursor: pointer;
+}
+
+button.llamar:hover {
+	opacity: 0.7;
 }
 
 form {
@@ -501,6 +509,10 @@ button.contactar {
 	opacity: none;
 	margin-left: 60px;
 	cursor: pointer;
+}
+
+button.contactar:hover {
+	opacity: 0.7;
 }
 
 
