@@ -2,17 +2,58 @@
 <html lang="es">
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta name="keywords" content="abogados en bilbao vizcaya"/>
+<meta name="keywords" content="libertas abogados en bilbao vizcaya"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
-  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda&family=Merriweather&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <script type="text/javascript" src="jquery.ihavecookies.js"></script>
+    <script type="text/javascript">
+    var options = {
+        title: '&#x1F36A; Cookies & Privacidad',
+        message: 'Utilizamos cookies para permitir el correcto funcionamiento de este sitio. Puede aceptar todas las cookies pulsando en “Aceptar”, así como configurarlas o rechazarlas individualmente. ',
+        delay: 600,
+        expires: 30,
+        link: '#',
+        onAccept: function(){
+            var myPreferences = $.fn.ihavecookies.cookie();
+            console.log('Yay! The following preferences were saved...');
+            console.log(myPreferences);
+        },
+        uncheckBoxes: true,
+        acceptBtnLabel: 'Aceptar Cookies',
+        moreInfoLabel: 'Más información',
+        cookieTypesTitle: 'Seleccionar los cookies que deseas aceptar',
+        fixedCookieTypeLabel: 'Esencial',
+        fixedCookieTypeDesc: 'Estos son esenciales para el correcto funcionamiento de esta página.'
+    }
+
+    $(document).ready(function() {
+        $('body').ihavecookies(options);
+
+        if ($.fn.ihavecookies.preference('marketing') === true) {
+            console.log('This should run because marketing is accepted.');
+        }
+
+        $('#ihavecookiesBtn').on('click', function(){
+            $('body').ihavecookies(options, 'reinit');
+        });
+    });
+
+    </script>
 </head>
 <body>
 <!---   HEADER MENU   --->	
 	<div class="navtop">
+<<<<<<< Updated upstream
 		
+=======
+		<h1>Libertas Abogados</h1>
+>>>>>>> Stashed changes
 		<h2>Iratxe Larringan y Marta Ruiz</h2>
 		<ul>
 			<li><a href="index.html">Inicio</a></li>
@@ -21,8 +62,11 @@
 			<li><a href="#map-contact">Contacto</a></li>
 		</ul>
 	</div>
+<<<<<<< Updated upstream
 
 	
+=======
+>>>>>>> Stashed changes
 
 <!--- PEDIR PRESUPUESTO FORM : HIDDEN --->
 	<form id="pedir-presupuesto" class="pedir-presupuesto" action="mail.php" method="post">
@@ -45,7 +89,7 @@
   </select>
       <br/>
 	<textarea name="message" placeholder="Escribe mensaje...." tabindex="5" required></textarea><br/>
-	<label>*Qué son 2+2? (Anti-spam)</label>
+	<label>*Qué son cuatro por uno? (Anti-spam)</label>
 	<input type="text" name="human" class="human" placeholder="Escribe aquí">
      <input type="submit" name="submit" class="enviar" value="Enviar"/>
      <input type="reset" name="reset" class="cancelar" value="Cancelar"/>
@@ -163,25 +207,31 @@
 <a href="index.html"><i class="fa fa-chevron-up"></i></a>
 <div id="map-contact">
 <h3>Calle Hurtado de Amezaga 5, 3º Derecha, Bilbao</h3>
-<h3>685.54.08.76 <i class="fa fa-phone"></i> 650.68.71.34</h3>
-<a href="mailto:libertasabogados@gmail.com?Subject=Consulta%20Libertas" target="_top"><button class="contactar">Contactar  <i class="fa fa-paper-plane-o"></i></button></a>
+<h3><i class="fa fa-phone"></i> Llámanos <br><a href="tel:685540876">685.54.08.76</a> <br> <a href="tel:650687134">650.68.71.34</a></h3>
+<a href="mailto:libertasabogados@gmail.com?Subject=Consulta%20Libertas" target="_top"><button class="contactar">Envíanos un e-mail  <i class="fa fa-paper-plane-o"></i></button></a>
 </div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.6562350534605!2d-2.933792949605305!3d43.258625979034406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fd15c65134f%3A0xe02cb6f146328f6b!2sHurtado+de+Amezaga+Kalea%2C+5%2C+48008+Bilbo%2C+Bizkaia!5e0!3m2!1sen!2ses!4v1550948574562" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.656525823117!2d-2.9337771851596033!3d43.25861988587481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fed7c83de2b%3A0x180b94295b20ccc0!2sLibertas%20Abogados!5e0!3m2!1sen!2ses!4v1677265323297!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 	
 
 <footer>
-	<!--<h4>Aviso legal</h4>
-	<h4>Uso de datos</h4>
-	<h4>Mapa de sitio</h4>-->
-	<h4>©2022 Dina Spencer</h4>
-	<h5>Larringan y Ruiz, abogados en Bilbao, Vizcaya</h5>
-	<!--<h5><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></h5>-->
+        <div class="footer-left">
+        <h3>Libertas Abogados en Bilbao, Vizcaya</h3>
+        <h4>Iratxe Larringan y Marta Ruiz</h4>
+        <h4>Calle Hurtado de Amezaga 5, 3º Derecha, Bilbao</h4>
+        <h4>685 54 08 76  |  650 68 71 34</h4> 
+        </div>
+        <div class="footer-right">
+        <a href="https://instagram.com/libertasabogados"><img src="img/instagram-icon.png"></a>
+        </div>
+  
+
+    <h4 class="footer-end">©Libertas Abogados 2023  |  Página web creada por <a href="https://dinaspencer.net" target="_blank">Dina Spencer Design</a></h4>
+	
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<!-- <script src="scripts.js"></script> -->
+
 </body>
 </html>
