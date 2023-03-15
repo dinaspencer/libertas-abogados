@@ -28,10 +28,63 @@ h2 {
 	color: white;
 }
 
+h4 {
+	font-family: "Coda",sans-serif;
+	font-size: 12px;
+}
+
+h5 {
+	font-size: 10px;
+	font-weight: lighter;
+}
+
+
 #container-header {
 	margin-left: 80px;
 	
 }
+
+.navtop {
+	margin-left: 100px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #413075;
+	max-width: 80%;
+	height: 80px;
+}
+
+.navtop h2 {
+	color: black;
+	/*font-family: "Coda",sans-serif;*/
+	font-size: 90%;
+	font-weight: lighter;
+	text-transform: uppercase;
+	margin-top: -30px;
+}
+
+.navtop ul {
+	float: right;
+	margin-top: -10px;
+	padding-top: 20px;
+}
+
+.navtop li {
+	display: inline;
+	list-style-type: none;
+	padding-left: 20px;
+	text-transform: uppercase;
+
+}
+
+.navtop a {
+	text-decoration: none;
+	padding: 10px;
+	color: black;
+}
+
+.navtop a:hover {
+	color: #dad6dc;
+}
+
 
 .main-image {
 	max-width: 100%;
@@ -218,145 +271,11 @@ select {
 
 }
 
-/******  COOKIES   *********/
 
-#gdpr-cookie-message {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    max-width: 375px;
-    background-color: #dad6dc;
-    padding: 20px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 6px 6px rgba(0,0,0,0.25);
-            box-shadow: 0 6px 6px rgba(0,0,0,0.25);
-    margin-left: 30px;
-    font-family: 'Coda', sans-serif;
-}
-#gdpr-cookie-message h4 {
-    color: #CA4A21;
-    font-family: 'Coda', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-#gdpr-cookie-message h5 {
-    color: #CA4A21;
-    font-family: 'Coda', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-#gdpr-cookie-message p, #gdpr-cookie-message ul {
-    color: white;
-    font-size: 15px;
-    line-height: 1.5em;
-}
-#gdpr-cookie-message p:last-child {
-    margin-bottom: 0;
-    text-align: right;
-}
-#gdpr-cookie-message li {
-    width: 49%;
-    display: inline-block;
-}
-#gdpr-cookie-message a {
-    color: #CA4A21;
-    text-decoration: none;
-    font-size: 15px;
-    padding-bottom: 2px;
-    border-bottom: 1px dotted rgba(255,255,255,0.75);
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-#gdpr-cookie-message a:hover {
-    color: white;
-    border-bottom-color: var(--red);
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-#gdpr-cookie-message button,
-button#ihavecookiesBtn {
-    border: none;
-    background: #CA4A21;
-    color: white;
-    font-family: 'Coda', sans-serif;
-    font-size: 15px;
-    padding: 7px;
-    border-radius: 3px;
-    margin-left: 15px;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-#gdpr-cookie-message button:hover {
-    background: white;
-    color: #CA4A21;
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-button#gdpr-cookie-advanced {
-    background: white;
-    color: #CA4A21;
-}
-#gdpr-cookie-message button:disabled {
-    opacity: 0.3;
-}
-#gdpr-cookie-message input[type="checkbox"] {
-    float: none;
-    margin-top: 0;
-    margin-right: 5px;
-}
-
-
-.pedir-presupuesto {
+.pedir-presupuesto-hide {
 	display: none;
 }
 
-.navtop {
-	margin-left: 100px;
-	padding-bottom: 15px;
-	border-bottom: 2px solid #413075;
-	max-width: 80%;
-	height: 80px;
-}
-
-.navtop h2 {
-	color: black;
-	/*font-family: "Coda",sans-serif;*/
-	font-size: 90%;
-	font-weight: lighter;
-	text-transform: uppercase;
-	margin-top: -30px;
-}
-
-.navtop ul {
-	float: right;
-	margin-top: -10px;
-	padding-top: 20px;
-}
-
-.navtop li {
-	display: inline;
-	list-style-type: none;
-	padding-left: 20px;
-	text-transform: uppercase;
-
-}
-
-.navtop a {
-	text-decoration: none;
-	padding: 10px;
-	color: black;
-}
-
-.navtop a:hover {
-	color: #dad6dc;
-}
 
 p {
 	font-family: "Coda",sans-serif;
@@ -526,7 +445,6 @@ iframe {
 footer {
 	margin-top: 50px;
 	padding: 40px 40px 40px 100px;
-	height: 220px;
 	max-width: 100%;
 	background-color: #413075;
     color: #fff;
@@ -553,18 +471,49 @@ footer h4 {
     padding-top: 32px;
 }
 
+.privacy-open {
+	text-decoration: underline;
+	cursor: pointer;
+}
 
+.overlay {
+	position: absolute;
+	opacity: 0.6;
+	background-color:rgba(46, 61, 73, 0.5);
+	width: 100%;
+	height: 3500px;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
 
+.overlay-hide {
+	display: none;
+}
 
-h4 {
+.popup-hide {
+	display: none;
+}
+
+.pol-privacidad {
+	position: absolute;
+	background-color: white;
+	border-radius: 8px;
+	-webkit-box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+	        box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+	padding: 15px;
+	max-width: 80%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: -550px;
 	font-family: "Coda",sans-serif;
-	font-size: 12px;
+	color: black;
+	font-size: 80%;
+	z-index: 100; 
+
 }
 
-h5 {
-	font-size: 10px;
-	font-weight: lighter;
-}
+
 
 @media (max-width: 350px) {
 	form {
@@ -594,6 +543,7 @@ h5 {
 		margin-left: -75px;
 	}
 
+
 	
 }
 
@@ -614,7 +564,7 @@ h5 {
 }
 }
 
-@media (max-width: 750px){
+@media (max-width: 769px){
 
 .navtop {
 	margin-left: 30px;
@@ -733,14 +683,19 @@ h5 {
 	}
 
 	footer {
-		margin-left: 30px;
+		margin-left: 0px;
+		padding-left: 30px;
+	}
+
+	.overlay {
+		height: 5000px;
 	}
 
 }
 
 
 
-@media (min-width: 751px){
+@media (min-width: 770px){
 	#map-contact {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -763,6 +718,10 @@ h5 {
     	        transform: translate(-50%, -50%); 
     	margin-top: 200px;
 
+	}
+
+	.pol-privacidad {
+		margin-left: -40px;
 	}
 }
 
@@ -805,3 +764,109 @@ h5 {
 		max-width: 80%;
 }
 	}
+
+	@media (max-width: 521px) {
+		.overlay {
+			height: 5600px;
+		}
+	
+		.pol-privacidad {
+			margin-left: -10px;
+			margin-top: -600px;
+		}
+	}
+
+
+	/******  COOKIES   *********/
+
+#gdpr-cookie-message {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    max-width: 375px;
+    background-color: #dad6dc;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 6px 6px rgba(0,0,0,0.25);
+            box-shadow: 0 6px 6px rgba(0,0,0,0.25);
+    margin-left: 30px;
+    font-family: 'Coda', sans-serif;
+}
+#gdpr-cookie-message h4 {
+    color: #CA4A21;
+    font-family: 'Coda', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#gdpr-cookie-message h5 {
+    color: #CA4A21;
+    font-family: 'Coda', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#gdpr-cookie-message p, #gdpr-cookie-message ul {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+#gdpr-cookie-message p:last-child {
+    margin-bottom: 0;
+    text-align: right;
+}
+#gdpr-cookie-message li {
+    width: 49%;
+    display: inline-block;
+}
+#gdpr-cookie-message a {
+    color: #CA4A21;
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted rgba(255,255,255,0.75);
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+#gdpr-cookie-message a:hover {
+    color: white;
+    border-bottom-color: var(--red);
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+#gdpr-cookie-message button,
+button#ihavecookiesBtn {
+    border: none;
+    background: #CA4A21;
+    color: white;
+    font-family: 'Coda', sans-serif;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 3px;
+    margin-left: 15px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+#gdpr-cookie-message button:hover {
+    background: white;
+    color: #CA4A21;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+button#gdpr-cookie-advanced {
+    background: white;
+    color: #CA4A21;
+}
+#gdpr-cookie-message button:disabled {
+    opacity: 0.3;
+}
+#gdpr-cookie-message input[type="checkbox"] {
+    float: none;
+    margin-top: 0;
+    margin-right: 5px;
+}
