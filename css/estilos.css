@@ -47,7 +47,7 @@ h5 {
 .navtop {
 	margin-left: 100px;
 	padding-bottom: 15px;
-	border-bottom: 2px solid #413075;
+	border-bottom: 2px solid #4a21ca;
 	max-width: 80%;
 	height: 80px;
 }
@@ -82,17 +82,19 @@ h5 {
 }
 
 .navtop a:hover {
-	color: #dad6dc;
+	color: #dad2f4;
 }
 
 
 .main-image {
 	max-width: 100%;
+	max-height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 20px;
 	padding-bottom: 50px;
 }
+
 
 
 .header {
@@ -103,8 +105,8 @@ h5 {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-	margin-top: 180px;
-    padding: 30px; 
+	margin-top: 240px;
+    padding: 50px; 
     max-width: 80%;
     position: absolute;
 }
@@ -130,7 +132,7 @@ button.presupuesto {
 }
 
 button.presupuesto:hover {
-	opacity: 0.7;
+	background-color: #652510;
 }
 
 button.llamar {
@@ -138,7 +140,7 @@ button.llamar {
 	height: 70px;
 	border: none;
 	border-radius: 8px;
-	background-color: green;
+	background-color: #21ca4a;
     font-family: "Coda", sans-serif;
 	font-size: 1.3em;
 	font-weight:bold;
@@ -149,7 +151,7 @@ button.llamar {
 }
 
 button.llamar:hover {
-	opacity: 0.7;
+	background-color: #106525;
 }
 
 form {
@@ -203,8 +205,8 @@ legend {
 input {
 	width: 90%;
 	height: 40px;
-	border: 1px solid #dad6dc;
-	background-color: #dad6dc;
+	border: 1px solid #dad2f4;
+	background-color: #dad2f4;
 	font-family: "Coda",sans-serif;
 	font-size: 90%;
 	padding: 10px;
@@ -213,8 +215,8 @@ input {
 .human {
 	width: 50px;
 	height: 40px;
-	border: 1px solid #dad6dc;
-	background-color: #dad6dc;
+	border: 1px solid #dad2f4;
+	background-color: #dad2f4;
 	font-family: "Coda",sans-serif;
 	font-size: 90%;
 	padding: 10px;
@@ -225,15 +227,15 @@ input {
 	height: 50px;
 	margin-top: 10px;
 	font-size: 100%;
-	background-color: #615192;
-	border: 1px solid #615192;
+	background-color: #4a21ca;
+	border: 1px solid #4a21ca;
 	color: white;
 	cursor: pointer;
 }
 
 .enviar:hover{
-	background-color: #dad6dc;
-	border: 1px solid #dad6dc;
+	background-color: #dad2f4;
+	border: 1px solid #dad2f4;
 }
 
 .cancelar {
@@ -248,15 +250,15 @@ input {
 }
 
 .cancelar:hover{
-	background-color: #dad6dc;
-	border: 1px solid #dad6dc;
+	background-color: #dad2f4;
+	border: 1px solid #dad2f4;
 }
 
 textarea {
 	width: 90%;
 	height: 75px;
-	border: 2px solid #dad6dc;
-	background-color: #dad6dc;
+	border: 2px solid #dad2f4;
+	background-color: #dad2f4;
 	font-size: 90%;
 	padding: 10px;
 }
@@ -266,8 +268,8 @@ select {
 	padding: 10px;
 	width: 100%;
 	height: 40px;
-	border: 2px solid #dad6dc;
-	background-color: #dad6dc;
+	border: 2px solid #dad2f4;
+	background-color: #dad2f4;
 
 }
 
@@ -420,7 +422,7 @@ button.contactar {
 	height: 70px;
 	border: none;
 	border-radius: 8px;
-	background-color: #615192;
+	background-color: #4a21ca;
     font-family: "Coda",sans-serif;
 	font-size: 1.3em;
 	font-weight:bold;
@@ -446,7 +448,7 @@ footer {
 	margin-top: 50px;
 	padding: 40px 40px 40px 100px;
 	max-width: 100%;
-	background-color: #413075;
+	background-color: #4a21ca;
     color: #fff;
 }
 
